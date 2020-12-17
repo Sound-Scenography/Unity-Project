@@ -360,11 +360,11 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 0.14
+  DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 60
+  MaxDistance: 160
   Pan2D: 0
-  rolloffMode: 2
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bd357e0017264773a9f6e49b127e3d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2007994789}
+  player: {fileID: 1429945210}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,7 +1146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!167 &2009254246
 AudioReverbZone:
   m_ObjectHideFlags: 0
@@ -1312,11 +1312,11 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 0.14
+  DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 50
+  MaxDistance: 160
   Pan2D: 0
-  rolloffMode: 2
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -1446,4 +1446,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bd357e0017264773a9f6e49b127e3d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1429945210}
+  player: {fileID: 2007994789}
