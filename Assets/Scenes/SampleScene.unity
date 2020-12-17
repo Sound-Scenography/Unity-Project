@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 223974228}
   - component: {fileID: 223974227}
   m_Layer: 0
-  m_Name: audioAmbisonics
+  m_Name: audioSphereAmbisonics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 492979432}
   - component: {fileID: 492979433}
   m_Layer: 0
-  m_Name: audioWood
+  m_Name: audioSphereSad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -334,11 +334,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492979430}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.795557, y: -15.388111, z: -23.13899}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: 0.2677, y: 0, z: 0.79161006}
+  m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 0.099999994}
   m_Children: []
-  m_Father: {fileID: 1878061635}
-  m_RootOrder: 3
+  m_Father: {fileID: 1429945210}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &492979432
 AudioSource:
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8b049704c6f74d8f9d6543589a819b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainSpeed: 100
+  mainSpeed: 50
   shiftAdd: 250
   maxShift: 1000
   mouseSensitivity: 0.02
@@ -807,7 +807,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1db0e90b9a3b07943b75591b4e452a96, type: 2}
+  - {fileID: 2100000, guid: 04dd0df1fc2034e2bb215bae15ca3347, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -844,9 +844,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429945204}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.974442, y: -15.388111, z: -37.33899}
-  m_LocalScale: {x: 39.1056, y: 39.1056, z: 39.1056}
-  m_Children: []
+  m_LocalPosition: {x: -18.974442, y: -15.388111, z: -102.3}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children:
+  - {fileID: 492979431}
   m_Father: {fileID: 1878061635}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -880,7 +881,6 @@ Transform:
   - {fileID: 2007994789}
   - {fileID: 1429945210}
   - {fileID: 2009254251}
-  - {fileID: 492979431}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1053,7 +1053,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1db0e90b9a3b07943b75591b4e452a96, type: 2}
+  - {fileID: 2100000, guid: 43eded56b93f2494f9d6b1d6f0ab49f5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1090,8 +1090,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007994784}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.795557, y: -15.388111, z: -23.13899}
-  m_LocalScale: {x: 40, y: 40, z: 40}
+  m_LocalPosition: {x: 52.25, y: -15.388111, z: -23.13899}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 2024153658}
   m_Father: {fileID: 1878061635}
@@ -1201,7 +1201,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 909ba812e840a4c4399dd2bf9ed67a3d, type: 2}
+  - {fileID: 2100000, guid: b0cb6f4a0924b4dfba6e0292107f57ae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1238,8 +1238,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009254245}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -48.104443, y: -15.388111, z: 3.9}
-  m_LocalScale: {x: 40, y: 40, z: 40}
+  m_LocalPosition: {x: -48.104443, y: -15.388111, z: 49.01}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 223974229}
   m_Father: {fileID: 1878061635}
@@ -1257,7 +1257,7 @@ GameObject:
   - component: {fileID: 2024153659}
   - component: {fileID: 2024153660}
   m_Layer: 0
-  m_Name: audioWater
+  m_Name: audioSphereHappy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
