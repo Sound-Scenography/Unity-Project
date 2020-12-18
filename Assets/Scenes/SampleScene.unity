@@ -318,6 +318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 492979431}
   - component: {fileID: 492979432}
+  - component: {fileID: 492979434}
   - component: {fileID: 492979433}
   m_Layer: 0
   m_Name: audioSphereSad
@@ -334,8 +335,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492979430}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2677, y: 0, z: 0.79161006}
-  m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 0.099999994}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1429945210}
   m_RootOrder: 0
@@ -361,8 +362,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
-  MinDistance: 1
-  MaxDistance: 160
+  MinDistance: 0
+  MaxDistance: 150
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -489,12 +490,32 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492979430}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bd357e0017264773a9f6e49b127e3d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1429945210}
+--- !u!114 &492979434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492979430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e503ea6418d27594caa33b93cac1b06a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpatialization: 1
+  gain: 1
+  useInvSqr: 1
+  near: 60
+  far: 150
+  volumetricRadius: 150
+  reverbSend: 0
+  enableRfl: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,17 +781,17 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429945204}
   m_Enabled: 1
-  m_MinDistance: 0
-  m_MaxDistance: 8
-  m_ReverbPreset: 23
+  m_MinDistance: 60
+  m_MaxDistance: 150
+  m_ReverbPreset: 26
   m_Room: -1000
-  m_RoomHF: -4000
-  m_DecayTime: 1.49
-  m_DecayHFRatio: 0.1
-  m_Reflections: -449
-  m_ReflectionsDelay: 0.007
-  m_Reverb: 1700
-  m_ReverbDelay: 0.011
+  m_RoomHF: -151
+  m_DecayTime: 7.56
+  m_DecayHFRatio: 0.91
+  m_Reflections: -626
+  m_ReflectionsDelay: 0.02
+  m_Reverb: 774
+  m_ReverbDelay: 0.03
   m_HFReference: 5000
   m_Diffusion: 100
   m_Density: 100
@@ -875,7 +896,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878061634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.104443, y: 15.388111, z: 23.03899}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2007994789}
@@ -1007,17 +1028,17 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007994784}
   m_Enabled: 1
-  m_MinDistance: 0
-  m_MaxDistance: 8
-  m_ReverbPreset: 24
+  m_MinDistance: 60
+  m_MaxDistance: 150
+  m_ReverbPreset: 13
   m_Room: -1000
-  m_RoomHF: 0
-  m_DecayTime: 8.39
-  m_DecayHFRatio: 1.39
-  m_Reflections: -115
-  m_ReflectionsDelay: 0.002
-  m_Reverb: 985
-  m_ReverbDelay: 0.03
+  m_RoomHF: -300
+  m_DecayTime: 1.49
+  m_DecayHFRatio: 0.59
+  m_Reflections: -1219
+  m_ReflectionsDelay: 0.007
+  m_Reverb: 441
+  m_ReverbDelay: 0.011
   m_HFReference: 5000
   m_Diffusion: 100
   m_Density: 100
@@ -1270,6 +1291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2024153658}
   - component: {fileID: 2024153659}
+  - component: {fileID: 2024153661}
   - component: {fileID: 2024153660}
   m_Layer: 0
   m_Name: audioSphereHappy
@@ -1286,7 +1308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024153657}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.66924995, y: 0, z: -0.355}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2007994789}
@@ -1313,8 +1335,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
-  MinDistance: 1
-  MaxDistance: 160
+  MinDistance: 0
+  MaxDistance: 150
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -1441,9 +1463,29 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024153657}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bd357e0017264773a9f6e49b127e3d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2007994789}
+--- !u!114 &2024153661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024153657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e503ea6418d27594caa33b93cac1b06a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpatialization: 1
+  gain: 1
+  useInvSqr: 1
+  near: 60
+  far: 150
+  volumetricRadius: 150
+  reverbSend: 0
+  enableRfl: 0
